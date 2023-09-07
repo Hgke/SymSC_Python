@@ -27,17 +27,17 @@ class ComplexObjectBase(ElementBase):
         self.complex = True
         self._new_names_obj = []
 
-    def add_JJ(self, name, c, r, A, B, loc):
+    def add_JJ(self, name, c, A, B, loc):
         """
         Adds a Josephson junction (JJ) to a subcircuit
         :param name: JJ name
         :param c: JJ capacitance (in normalized capacitance units)
-        :param r: JJ resistance (in normalized resistance units)
+        :param r: JJ resistance, r = 1/A (in normalized resistance units)
         :param A: JJ critical current (in normalized Ic units)
         :param B: JJ critical current second harmonics (in normalized Ic units)
         :param loc: JJ location in a sub circuit (use sk array passed to crreate_elements function)
         """
-        new_obj = JJ(loc=loc, c=c, r=r, A=A, B=B)
+        new_obj = JJ(loc=loc, c=c, A=A, B=B)
         new_obj.name = f'{self.name}_{name}'
         self._new_names_obj.append(new_obj)
 

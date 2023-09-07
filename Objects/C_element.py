@@ -16,12 +16,12 @@ class C_element(ComplexObjectBase):
         self.add_ib(name='Ib18', val=1.4, loc=[sk[1]])
         self.add_ib(name='Ib19', val=1.4, loc=[sk[2]])
 
-        self.add_JJ(name='J12', c=1, r=1, A=1.51, B=0, loc=[sk[3], 0])
-        self.add_JJ(name='J0', c=1, r=1, A=2.1, B=0, loc=[sk[4], 0])
-        self.add_JJ(name='J1', c=1, r=1, A=2.84, B=0, loc=[sk[9], 0])
-        self.add_JJ(name='J2', c=1, r=1, A=2.1, B=0, loc=[sk[7], 0])
-        self.add_JJ(name='J16', c=1, r=1, A=1.51, B=0, loc=[sk[6], 0])
-        self.add_JJ(name='J21', c=1, r=1, A=2.89, B=0, loc=[sk[2], 0])
+        self.add_JJ(name='J12', c=1, A=1.51, B=0, loc=[sk[3], 0])
+        self.add_JJ(name='J0', c=1, A=2.1, B=0, loc=[sk[4], 0])
+        self.add_JJ(name='J1', c=1, A=2.84, B=0, loc=[sk[9], 0])
+        self.add_JJ(name='J2', c=1, A=2.1, B=0, loc=[sk[7], 0])
+        self.add_JJ(name='J16', c=1, A=1.51, B=0, loc=[sk[6], 0])
+        self.add_JJ(name='J21', c=1, A=2.89, B=0, loc=[sk[2], 0])
 
         self.add_L(name='L7', val=0.81, loc=[sk[0], sk[3]])
         self.add_L(name='L10', val=1.25, loc=[sk[3], sk[4]])

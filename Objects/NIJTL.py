@@ -8,7 +8,7 @@ class NIJTL(ComplexObjectBase):
         1 - input signal
         2 - output signal
         """
-    def __init__(self, loc, N, ib_val=0.75, jj_c=1, jj_r=1, jj_a=1, jj_b=0, jj_c_c=1, jj_c_r=1, jj_c_a=0.7, jj_c_b=0):
+    def __init__(self, loc, N, ib_val=0.75, jj_c=1, jj_a=1, jj_b=0, jj_c_c=1, jj_c_r=1, jj_c_a=0.7, jj_c_b=0):
         """
         A class constructor
 
@@ -29,7 +29,6 @@ class NIJTL(ComplexObjectBase):
         self.jj_a = jj_a
         self.jj_b = jj_b
         self.jj_c = jj_c
-        self.jj_r = jj_r
 
         self.jj_c_a = jj_c_a
         self.jj_c_b = jj_c_b
@@ -46,7 +45,7 @@ class NIJTL(ComplexObjectBase):
         for i in range(self.N):
             # Josephson junction
             name = f'JJ_{i + 1}'
-            self.add_JJ(name=name, loc=[sk[i], 0], c=self.jj_c, r=self.jj_r, A=self.jj_a, B=self.jj_b)
+            self.add_JJ(name=name, loc=[sk[i], 0], c=self.jj_c, A=self.jj_a, B=self.jj_b)
 
             # Current bias
             name = f'Ib_{i + 1}'

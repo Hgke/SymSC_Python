@@ -20,11 +20,11 @@ class Pulse_Merger(ComplexObjectBase):
         self.description = 'Merger 2 pulses to 1 pulse'
 
     def create_elements(self, sk):
-        self.add_JJ(name='J3', c=1, r=1, A=2.01, B=0, loc=[sk[3], sk[4]])
-        self.add_JJ(name='J2', c=1, r=1, A=1.79, B=0, loc=[sk[5], sk[9]])
-        self.add_JJ(name='J4', c=1, r=1, A=2.01, B=0, loc=[sk[6], sk[7]])
-        self.add_JJ(name='J1', c=1, r=1, A=1.79, B=0, loc=[sk[8], sk[9]])
-        self.add_JJ(name='J5', c=1, r=1, A=2.01, B=0, loc=[sk[12], sk[13]])
+        self.add_JJ(name='J3', c=1, A=2.01, B=0, loc=[sk[3], sk[4]])
+        self.add_JJ(name='J2', c=1, A=1.79, B=0, loc=[sk[5], sk[9]])
+        self.add_JJ(name='J4', c=1, A=2.01, B=0, loc=[sk[6], sk[7]])
+        self.add_JJ(name='J1', c=1, A=1.79, B=0, loc=[sk[8], sk[9]])
+        self.add_JJ(name='J5', c=1, A=2.01, B=0, loc=[sk[12], sk[13]])
 
         self.add_ib(name='Ib1', val=4.1, loc=[sk[11]])
 

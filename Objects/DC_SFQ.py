@@ -21,10 +21,10 @@ class DC_SFQ(ComplexObjectBase):
 
         self.add_ib(name='Ib1', val=2.98, loc=[sk[10]])
 
-        self.add_JJ(name='J1', c=1, r=1, A=1.18, B=0, loc=[sk[3], sk[4]])
-        self.add_JJ(name='J2', c=1, r=1, A=1.37, B=0, loc=[sk[7], sk[8]])
-        self.add_JJ(name='J3', c=1, r=1, A=1.37, B=0, loc=[sk[5], sk[6]])
-        self.add_JJ(name='J4', c=1, r=1, A=1.96, B=0, loc=[sk[11], sk[12]])
+        self.add_JJ(name='J1', c=1, A=1.18, B=0, loc=[sk[3], sk[4]])
+        self.add_JJ(name='J2', c=1, A=1.37, B=0, loc=[sk[7], sk[8]])
+        self.add_JJ(name='J3', c=1, A=1.37, B=0, loc=[sk[5], sk[6]])
+        self.add_JJ(name='J4', c=1, A=1.96, B=0, loc=[sk[11], sk[12]])
 
         self.add_L(name='L2', val=1.27, loc=[sk[0], sk[2]])
         self.add_L(name='L8', val=1.36, loc=[sk[5], 0])

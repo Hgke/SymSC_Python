@@ -18,16 +18,16 @@ class SFQ_DC(ComplexObjectBase):
         self.description = 'SFQ to DC converter'
 
     def create_elements(self, sk):
-        self.add_JJ(name='J0', A=2.42, B=0, r=1, c=1, loc=[sk[3], sk[4]])
-        self.add_JJ(name='J1', A=1.77, B=0, r=1, c=1, loc=[sk[7], sk[11]])
-        self.add_JJ(name='J2', A=1.77, B=0, r=1, c=1, loc=[sk[8], sk[7]])
-        self.add_JJ(name='J3', A=1.37, B=0, r=1, c=1, loc=[sk[9], sk[10]])
-        self.add_JJ(name='J4', A=1.37, B=0, r=1, c=1, loc=[sk[12], sk[13]])
-        self.add_JJ(name='J5', A=2.7, B=0, r=1, c=1, loc=[sk[15], 0])
-        self.add_JJ(name='J6', A=2.7, B=0, r=1, c=1, loc=[sk[23], sk[25]])
-        self.add_JJ(name='J7', A=1, B=0, r=1, c=1, loc=[sk[16], sk[20]])
-        self.add_JJ(name='J8', A=1.77, B=0, r=1, c=1, loc=[sk[21], sk[22]])
-        self.add_JJ(name='J9', A=1.96, B=0, r=1, c=1, loc=[sk[27], sk[28]])
+        self.add_JJ(name='J0', A=2.42, B=0, c=1, loc=[sk[3], sk[4]])
+        self.add_JJ(name='J1', A=1.77, B=0, c=1, loc=[sk[7], sk[11]])
+        self.add_JJ(name='J2', A=1.77, B=0, c=1, loc=[sk[8], sk[7]])
+        self.add_JJ(name='J3', A=1.37, B=0, c=1, loc=[sk[9], sk[10]])
+        self.add_JJ(name='J4', A=1.37, B=0, c=1, loc=[sk[12], sk[13]])
+        self.add_JJ(name='J5', A=2.7, B=0,  c=1, loc=[sk[15], 0])
+        self.add_JJ(name='J6', A=2.7, B=0, c=1, loc=[sk[23], sk[25]])
+        self.add_JJ(name='J7', A=1, B=0, c=1, loc=[sk[16], sk[20]])
+        self.add_JJ(name='J8', A=1.77, B=0, c=1, loc=[sk[21], sk[22]])
+        self.add_JJ(name='J9', A=1.96, B=0, c=1, loc=[sk[27], sk[28]])
 
         self.add_L(name='L0', val=0.75, loc=[sk[0], sk[3]])
         self.add_L(name='L1', val=0.04, loc=[sk[4], 0])

@@ -12,8 +12,8 @@ class Neuron(ComplexObjectBase):
 
     def create_elements(self, sk):
         
-        self.add_JJ(name='JJ_c', c=1, r=1, A=1, B=0, loc=[sk[3], sk[2]])
-        self.add_JJ(name='JJ_p', c=1, r=1, A=1, B=0, loc=[sk[1], 0])
+        self.add_JJ(name='JJ_c', c=1, A=1, B=0, loc=[sk[3], sk[2]])
+        self.add_JJ(name='JJ_p', c=1, A=1, B=0, loc=[sk[1], 0])
         
         self.add_L(name='L_c', val=0.0001, loc=[sk[0], sk[3]])
         self.add_L(name='L_s', val=4.948, loc=[sk[0], 0])
